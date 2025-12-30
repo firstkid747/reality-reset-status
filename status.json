@@ -1,35 +1,6 @@
 {
   "system": "Reality Reset OS",
-  "status": "active",
-    "updated_utc": "",
-  "last_run_minutes_ago": null,
-
-  "system_health": {
-    "ok": true,
-    "notes": "initial live state"
-  },
-
-  "signals": {
-    "market_os": {
-      "enabled": true,
-      "state": "idle"
-    },
-    "medical_os": {
-      "enabled": true,
-      "state": "idle"
-    },
-    "pressure_index": {
-      "enabled": true,
-      "state": "calibrating"
-    }
-  },
-
-  "metrics": {
-    "confidence_level": null,
-    "translation_lag": null
-  },
-
-  "alerts": [],
-
-  "notes": "Live bridge established. Awaiting updater."
+  "status": "online",
+  "last_heartbeat_utc": 1767103321,
+  "heartbeat_interval_minutes": 5
 }
