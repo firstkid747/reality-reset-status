@@ -4,5 +4,14 @@
     "principle": "Time-locked forward prediction",
     "immutable": true
   },
-  "predictions": []
+  "predictions": [
+    {
+      "id": "RR-001",
+      "created_utc": "2025-01-30T07:11:00Z",
+      "domain": "system_validation",
+      "statement": "Nova OS public prediction ledger established and immutable prior to any forward claims.",
+      "confidence": 1.0,
+      "status": "open"
+    }
+  ]
 }
