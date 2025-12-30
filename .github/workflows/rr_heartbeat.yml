@@ -15,24 +15,24 @@ jobs:
 
       - name: Update status.json
         run: |
-          python3 - << 'EOF'
+          python3 << 'PY'
           import json, time
 
           data = {
-              "system": "Reality Reset OS",
-              "status": "online",
-              "last_heartbeat_utc": int(time.time()),
-              "heartbeat_interval_minutes": 5
+            "system": "Reality Reset OS",
+            "status": "online",
+            "last_heartbeat_utc": int(time.time()),
+            "heartbeat_interval_minutes": 5
           }
 
           with open("status.json", "w") as f:
-              json.dump(data, f, indent=2)
-          EOF
+            json.dump(data, f, indent=2)
+          PY
 
       - name: Commit changes
         run: |
           git config user.name "reality-reset-bot"
           git config user.email "bot@realityreset.ai"
           git add status.json
-          git commit -m "heartbeat: auto update status" || echo "No changes to commit"
+          git commit -m "heartbeat: auto-update status" || echo "No changes"
           git push
