@@ -1,12 +1,35 @@
 {
-  "updated_utc": "init",
+  "system": "Reality Reset OS",
+  "status": "active",
+  "updated_utc": "",
+  "last_run_minutes_ago": null,
+
   "system_health": {
-    "ok": false,
-    "last_run_minutes_ago": null
+    "ok": true,
+    "notes": "initial live state"
   },
-  "markets": {},
-  "cross_market": {
-    "coherence": null
+
+  "signals": {
+    "market_os": {
+      "enabled": true,
+      "state": "idle"
+    },
+    "medical_os": {
+      "enabled": true,
+      "state": "idle"
+    },
+    "pressure_index": {
+      "enabled": true,
+      "state": "calibrating"
+    }
   },
-  "alerts": ["initial setup"]
+
+  "metrics": {
+    "confidence_level": null,
+    "translation_lag": null
+  },
+
+  "alerts": [],
+
+  "notes": "Live bridge established. Awaiting updater."
 }
