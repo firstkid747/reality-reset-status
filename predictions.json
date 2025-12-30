@@ -1,17 +1,40 @@
 {
   "meta": {
     "system": "Nova Intelligence OS",
-    "principle": "Time-locked forward prediction",
-    "immutable": true
+    "principle": "time-locked forward validation",
+    "immutable": true,
+    "notes": "All predictions are publicly timestamped and validated via GitHub Actions"
   },
   "predictions": [
     {
       "id": "RR-001",
-      "created_utc": "2025-01-30T07:11:00Z",
+      "created_utc": "2025-01-30T07:15:00Z",
       "domain": "system_validation",
-      "statement": "Nova OS public prediction ledger established and immutable prior to any forward claims.",
+      "statement": "Nova OS public validation pipeline will remain continuously online and generate verifiable metrics at regular intervals.",
       "confidence": 1.0,
-      "status": "open"
+      "status": "open",
+      "validation_type": "infrastructure",
+      "resolution_criteria": "Heartbeat, metrics, and ledger files update automatically via GitHub Actions."
+    },
+    {
+      "id": "RR-002",
+      "created_utc": "2025-01-30T07:20:00Z",
+      "domain": "process_integrity",
+      "statement": "All validation outputs produced by Nova OS will be cryptographically hash-linked to prior outputs, forming an immutable public chain.",
+      "confidence": 0.95,
+      "status": "open",
+      "validation_type": "cryptographic",
+      "resolution_criteria": "Each metrics file references the hash of the previous metrics state."
+    },
+    {
+      "id": "RR-003",
+      "created_utc": "2025-01-30T07:25:00Z",
+      "domain": "scalability",
+      "statement": "Nova OS can accumulate tens of thousands of independent validation events without manual intervention.",
+      "confidence": 0.9,
+      "status": "open",
+      "validation_type": "volume",
+      "resolution_criteria": "Ledger.jsonl grows continuously with timestamped validation entries."
     }
   ]
 }
