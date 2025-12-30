@@ -1,0 +1,12 @@
+{
+  "updated_utc": "init",
+  "system_health": {
+    "ok": false,
+    "last_run_minutes_ago": null
+  },
+  "markets": {},
+  "cross_market": {
+    "coherence": null
+  },
+  "alerts": ["initial setup"]
+}
